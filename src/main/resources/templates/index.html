@@ -5,16 +5,16 @@
     <title>text</title>
 </head>
 <body>
-    <span th:text="${user.username}">小明</span>
-    <span th:if="${user.age <= 100}"> 究极美丽</span>
-    <span th:unless="${user.age <= 100}"> 超级美丽 </span>
+<!--    <span th:text="${user.username}">小明</span>-->
+<!--    <span th:if="${user.age <= 100}"> 究极美丽</span>-->
+<!--    <span th:unless="${user.age <= 100}"> 超级美丽 </span>-->
 
 
-    <div th:switch="${user.age}">
-        <span th:case="18"> 18 </span>
-        <span th:case="100"> 100 </span>
-        <span th:case="*"> else </span>
-    </div>
+<!--    <div th:switch="${user.age}">-->
+<!--        <span th:case="18"> 18 </span>-->
+<!--        <span th:case="100"> 100 </span>-->
+<!--        <span th:case="*"> else </span>-->
+<!--    </div>-->
 
     <div th:each="name, item:${names}">
         <span th:text="${item.count}"></span>

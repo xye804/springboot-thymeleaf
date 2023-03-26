@@ -11,17 +11,21 @@ import java.util.ArrayList;
 @Controller
 public class DemoController {
 
-    @GetMapping("/")
-    public String index(Model model) {
-        User user = new User("sbzjy", 100);
-        model.addAttribute("user", user);
-        return "index";
-    }
+//    @GetMapping("/")
+//    public String index(Model model) {
+//        User user = new User("sbzjy", 100);
+//        model.addAttribute("user", user);
+//        return "index";
+//    }
 
     @GetMapping("/")
     public ModelAndView index() {
         ArrayList<String> names = new ArrayList<>();
         ModelAndView modelAndView = new ModelAndView("index");
+        names.add("zjy");
+        names.add("sb");
+        names.add("dsb");
+        names.add("cjdsb");
         modelAndView.addObject("names", names);
         return modelAndView;
     }
