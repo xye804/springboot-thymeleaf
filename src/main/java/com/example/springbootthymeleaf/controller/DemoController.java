@@ -12,6 +12,6 @@ public class DemoController {
     public String index(Model model) {
         User user = new User("sbzjy", 100);
         model.addAttribute("user", user);
-        return "th-text";
+        return "index";
     }
 }
